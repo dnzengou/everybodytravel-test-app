@@ -95,7 +95,7 @@
             <i class="material-icons">more_vert</i>
           </button>
                 <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                    <li class="mdl-menu__item"><a href="templates/member.html">Become a member</a></li>
+                    <li class="mdl-menu__item"><a href="member.html">Become a member</a></li>
                     <li class="mdl-menu__item">Login</li>
                     <li class="mdl-menu__item">About</li>
                     <li class="mdl-menu__item">Contact</li>
@@ -123,15 +123,15 @@
                 </div>
             </header>
             <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-                <a class="mdl-navigation__link" href="templates/my-account.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>My account</a>
+                <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link" href="my-account.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>My account</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
-                <a class="mdl-navigation__link" href="templates/hotel.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
+                <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
+                <a class="mdl-navigation__link" href="hotel-results.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Vacation rental</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Things to do</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">nature_people</i>Local guide</a>
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Full experience</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Full experience</a>-->
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Blog</a>
                 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>-->
@@ -143,8 +143,19 @@
         <!-- section travelo -->
 
 
-        <main class="mdl-layout__content mdl-color--grey-100" style:"background-color= #00ff00">
+        <main class="mdl-layout__content mdl-color--grey-100">
             <div class="container">
+
+                <!--<img src="assets/images/beach.jpg">
+                <style>
+                    div {
+                        /*background-color: #8b9dc3;*/
+                        background-image: url(assets/images/beach.jpg);
+                        background-repeat: repeat;
+                    }
+                </style>-->
+
+
                 <div id="main">
                     <!--<h1 class="page-title">Fly with us in Comfort!</h1>
                     <h2 class="page-description col-md-6 no-float no-padding">We're bringing you a modern, comfortable and connected flight experience.</h2>-->
@@ -226,7 +237,7 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="flights-tab">
-                                    <form action="flight-list-view.html" method="post">
+                                    <form action="flight-results.html" method="post">
                                         <h4 class="title">Where do you want to go?</h4>
                                         <div class="row">
                                             <div class="col-md-4">
@@ -312,7 +323,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-6 pull-right">
-                                                        <button class="full-width">SERACH NOW</button>
+                                                        <button class="full-width">SEARCH NOW</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -320,7 +331,7 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="flight-and-hotel-tab">
-                                    <form action="flight-list-view.html" method="post">
+                                    <form action="flight-results.html" method="post">
                                         <h4 class="title">Where do you want to go?</h4>
                                         <div class="row">
                                             <div class="col-md-4">
@@ -406,7 +417,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-6 pull-right">
-                                                        <button class="full-width">SERACH NOW</button>
+                                                        <button class="full-width">SEARCH NOW</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -502,7 +513,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <button class="full-width">SERACH NOW</button>
+                                                        <button class="full-width">SEARCH NOW</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -583,7 +594,7 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="flight-status-tab">
-                                    <form action="flight-list-view.html" method="post">
+                                    <form action="flight-results.html" method="post">
                                         <h4 class="title">Where do you want to go?</h4>
                                         <div class="row">
                                             <div class="col-md-6">
@@ -737,7 +748,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-6 pull-right">
-                                                        <button class="full-width">SERACH NOW</button>
+                                                        <button class="full-width">SEARCH NOW</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -747,62 +758,67 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <iframe height="345px" width="100%" style="border:none;" src="assets/images/bg-main.jpg">
+              </iframe>
+
                 </div>
             </div>
 
         </main>
 
-            <!-- end section travelo -->
+        <!-- end section travelo -->
 
         <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
         <script src="assets/js/material.min.js"></script>
 
 
-    <!-- end js travelo -->        
-    
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
-    
-    <!-- Twitter Bootstrap -->
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-    
-    <!-- load revolution slider scripts -->
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- js travelo -->
 
-    <!-- Flex Slider -->
-    <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
-    
-    <!-- load BXSlider scripts -->
-    <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
-    
-    <!-- parallax -->
-    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
-    
-    <!-- waypoint -->
-    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
 
-    <!-- load page Javascript -->
-    <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
-    
-    <script type="text/javascript">
-        tjq(".flexslider").flexslider({
-            animation: "fade",
-            controlNav: false,
-            animationLoop: true,
-            directionNav: false,
-            slideshow: true,
-            slideshowSpeed: 5000
-        });
-    </script>
+        <!-- Twitter Bootstrap -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <!-- end js travelo -->
+        <!-- load revolution slider scripts -->
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- Flex Slider -->
+        <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
+
+        <!-- load BXSlider scripts -->
+        <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+        <!-- parallax -->
+        <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+
+        <!-- waypoint -->
+        <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+
+        <!-- load page Javascript -->
+        <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+        <script type="text/javascript">
+            tjq(".flexslider").flexslider({
+                animation: "fade",
+                controlNav: false,
+                animationLoop: true,
+                directionNav: false,
+                slideshow: true,
+                slideshowSpeed: 5000
+            });
+        </script>
+
+        <!-- end js travelo -->
 
 </body>
 
