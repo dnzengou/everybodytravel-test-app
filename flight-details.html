@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>everybodytravel-test</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/material.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+    <!-- Theme Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- Current Page Styles Travelo -->
+    <link rel="stylesheet" type="text/css" href="assets/components/revolution_slider/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/revolution_slider/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/jquery.bxslider/jquery.bxslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/flexslider/flexslider.css" media="screen" />
+
+    <!-- Main Style Travelo -->
+    <link id="main-style" rel="stylesheet" href="assets/css/style-travelo.css">
+
+    <!-- Updated Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/updates.css">
+
+    <!-- Custom Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Responsive Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    <style>
+        #message-us {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+        
+        .dropbtn {
+            background-color: Transparent;
+            /*background-color: #4CAF50;*/
+            color: #808080;
+            padding: 6px;
+            font-size: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #e5e5e5;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown a:hover {
+            background-color: #f1f1f1
+        }
+        
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row">
+                <!--<span class="mdl-layout-title">
+                  <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i></a>
+                </span>-->
+                <div class="mdl-layout-spacer">
+
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button onclick="showMenu()" class="dropbtn">
+                            <i class="material-icons">language</i>
+                            </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" title="Deutsch">Deutsch</a>
+                        <a href="#" title="English">English</a>
+                        <a href="#" title="Español">Español</a>
+                        <a href="#" title="Français">Français</a>
+                        <a href="#" title="Nederlands">Nederlands</a>
+                        <a href="#" title="Português">Português</a>
+                    </div>
+                </div>
+
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item"><a href="member.html">Become a member</a></li>
+                    <li class="mdl-menu__item">About</li>
+                    <li class="mdl-menu__item">Contact</li>
+                    <li class="mdl-menu__item">Legal information</li>
+                    <li class="mdl-menu__item">Support</li>
+                </ul>
+            </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="demo-drawer-header">
+                <img src="assets/images/user.png" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span>me@email.me</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                        <li class="mdl-menu__item">hello@email.you</li>
+                        <li class="mdl-menu__item">info@email.us</li>
+                        <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+                    </ul>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link" href="my-account.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>My account</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
+                <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
+                <a class="mdl-navigation__link" href="hotel-results.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Vacation rental</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Things to do</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">nature_people</i>Local guide</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Full experience</a>-->
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Blog</a>
+                <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>-->
+                <div class="mdl-layout-spacer"></div>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+            </nav>
+        </div>
+
+        <!-- section travelo -->
+
+        <div class="page-title-container">
+            <div class="container">
+                <div class="page-title pull-left">
+                    <h2 class="entry-title"></h2>
+                    <!--<h2 class="entry-title">Flight Search Results</h2>-->
+                </div>
+                <ul class="breadcrumbs pull-right">
+                    <li><a href="index.html">HOME</a></li>
+
+                    <ul class="breadcrumbs pull-left">
+                        <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
+                        <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                        <li class="active">Flight Search Results</li>
+                    </ul>
+                </ul>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- login and signup-->
+
+        <div id="travelo-signup" class="travelo-signup-box travelo-box">
+            <div class="login-social">
+                <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+            </div>
+            <div class="seperator"><label>OR</label></div>
+            <div class="simple-signup">
+                <div class="text-center signup-email-section">
+                    <a href="#" class="signup-email"><i class="soap-icon-letter"></i>Sign up with Email</a>
+                </div>
+                <p class="description">By signing up, I agree to EverybodyTravel's Terms of Service, Privacy Policy, Guest Refund olicy, and Host Guarantee Terms.</p>
+            </div>
+            <div class="email-signup">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="first name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="input-text full-width" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="input-text full-width" placeholder="confirm password">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                    <input type="checkbox"> Tell me about EverybodyTravel news
+                                </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="description">By signing up, I agree to EverybodyTravel's Terms of Service, Privacy Policy, Guest Refund Policy, and Host Guarantee Terms.</p>
+                    </div>
+                    <button type="submit" class="full-width btn-medium">SIGNUP</button>
+                </form>
+            </div>
+            <div class="seperator"></div>
+            <p>Already a EverybodyTravel member? <a href="#travelo-login" class="goto-login soap-popupbox">Login</a></p>
+        </div>
+        <div id="travelo-login" class="travelo-login-box travelo-box">
+            <div class="login-social">
+                <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+            </div>
+            <div class="seperator"><label>OR</label></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="input-text full-width" placeholder="email address">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input-text full-width" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password pull-right">Forgot password?</a>
+                    <div class="checkbox checkbox-inline">
+                        <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                    </div>
+                </div>
+            </form>
+            <div class="seperator"></div>
+            <p>Don't have an account? <a href="member.html"> Become a member</a> and <a href="#travelo-signup" class="goto-signup soap-popupbox"> Sign up</a></p>
+        </div>
+
+        <!-- end login and signup-->
+
+        <section id="content">
+            <div class="container">
+                <div id="main">
+
+                    <div id="flight-features" class="tab-container">
+                        <ul class="tabs">
+                            <li class="active"><a href="#flight-details" data-toggle="tab">Flight Details</a></li>
+                            <li><a href="#inflight-features" data-toggle="tab">Inflight Features</a></li>
+                            <li><a href="#flgiht-seat-selection" data-toggle="tab">Seat Selection</a></li>
+                            <li><a href="#flight-baggage" data-toggle="tab">Baggage</a></li>
+                            <!--<li><a href="#flight-fare-rules" data-toggle="tab">Fare Rules</a></li>-->
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="flight-details">
+                                <div class="intro table-wrapper full-width hidden-table-sm box">
+                                    <div class="col-md-4 table-cell travelo-box">
+                                        <dl class="term-description">
+                                            <dt>Airline:</dt>
+                                            <dd>delta</dd>
+                                            <dt>Flight Type:</dt>
+                                            <dd>Economy</dd>
+                                            <dt>Fare type:</dt>
+                                            <dd>Refundable</dd>
+                                            <dt>Cancellation:</dt>
+                                            <dd>$78 / person</dd>
+                                            <dt>Flight CHange:</dt>
+                                            <dd>$53 / person</dd>
+                                            <dt>Seats &amp; Baggage:</dt>
+                                            <dd>Extra Charge</dd>
+                                            <dt>Inflight Features:</dt>
+                                            <dd>Available</dd>
+                                            <dt>Base fare:</dt>
+                                            <dd>$320.00</dd>
+                                            <dt>Taxes &amp; Fees:</dt>
+                                            <dd>$300.00</dd>
+                                            <dt>total price:</dt>
+                                            <dd>$620.00</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-md-8 table-cell">
+                                        <div class="detailed-features booking-details">
+                                            <div class="travelo-box">
+                                                <a href="#" class="button btn-mini yellow pull-right">1 STOP</a>
+                                                <h4 class="box-title">Indianapolis to Paris<small>Oneway flight</small></h4>
+                                            </div>
+                                            <div class="table-wrapper flights">
+                                                <div class="table-row first-flight">
+                                                    <div class="table-cell logo">
+                                                        <img src="http://placehold.it/140x30" alt="">
+                                                        <label>AI-635 Economy</label>
+                                                    </div>
+                                                    <div class="table-cell timing-detail">
+                                                        <div class="timing">
+                                                            <div class="check-in">
+                                                                <label>Take off</label>
+                                                                <span>13 Nov 2013, 7:50 am</span>
+                                                            </div>
+                                                            <div class="duration text-center">
+                                                                <i class="soap-icon-clock"></i>
+                                                                <span>1h 30m</span>
+                                                            </div>
+                                                            <div class="check-out">
+                                                                <label>landing</label>
+                                                                <span>13 Nov 2013, 9:20 Am</span>
+                                                            </div>
+                                                        </div>
+                                                        <label class="layover">Layover : 3h 50m</label>
+                                                    </div>
+                                                </div>
+                                                <div class="table-row second-flight">
+                                                    <div class="table-cell logo">
+                                                        <img src="http://placehold.it/140x30" alt="">
+                                                        <label>AI-635 Economy</label>
+                                                    </div>
+                                                    <div class="table-cell timing-detail">
+                                                        <div class="timing">
+                                                            <div class="check-in">
+                                                                <label>Take off</label>
+                                                                <span>13 Nov 2013, 7:50 am</span>
+                                                            </div>
+                                                            <div class="duration text-center">
+                                                                <i class="soap-icon-clock"></i>
+                                                                <span>8h 20m</span>
+                                                            </div>
+                                                            <div class="check-out">
+                                                                <label>landing</label>
+                                                                <span>13 Nov 2013, 9:20 Am</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="long-description">
+                                    <h2>About Delta Airlines</h2>
+                                    <p></p>
+                                </div>-->
+                            </div>
+                            <div class="tab-pane fade" id="inflight-features">
+                                <!--<h2></h2>
+                                <p></p>-->
+                                <ul class="amenities clearfix style1 box">
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-wifi"></i>WI_FI</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-entertainment"></i>entertainment</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-television"></i>television</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-aircon"></i>air conditioning</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-juice"></i>drink</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-joystick"></i>games</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-coffee"></i>coffee</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-winebar"></i>wines</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-shopping"></i>shopping</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-food"></i>food</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-comfort"></i>comfort</div>
+                                    </li>
+                                    <li class="col-md-4 col-sm-6">
+                                        <div class="icon-box style1"><i class="soap-icon-magazine"></i>magazines</div>
+                                    </li>
+                                </ul>
+                                <!--<h2></h2>
+                                <p></p>
+                                <ul class="amenities clearfix style2"></ul>-->
+                            </div>
+                            <div class="tab-pane fade" id="flgiht-seat-selection">
+                                <h2>Select your Seats</h2>
+                                <p>Would you like a window seat or treat yourself to more comfort? Select your seats online in advance with our easy-to-use seat map. You can choose and change your seat until 48 hours before departure, when booking on Travelo.com.
+                                    Also you can choose and change your seats at a self-service machine at the airport.</p>
+                                <hr>
+                                <div class="image-box style12">
+                                    <article class="box">
+                                        <figure>
+                                            <img src="http://placehold.it/120x100" alt="" class="middle-item" />
+                                        </figure>
+                                        <div class="details">
+                                            <h4 class="box-title">Standard advance seat selection</h4>
+                                            <p>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcor vulputate nisi, et fringilla ante convallis quis. </p>
+                                        </div>
+                                        <div class="action">
+                                            <span class="price"><small>starting at</small>$18</span>
+                                            <a href="flight-booking.html" class="button btn-small">SELECT NOW</a>
+                                        </div>
+                                    </article>
+                                    <hr>
+                                    <article class="box">
+                                        <figure>
+                                            <img src="http://placehold.it/120x100" alt="" class="middle-item" />
+                                        </figure>
+                                        <div class="details">
+                                            <h4 class="box-title">Standard advance seat selection</h4>
+                                            <p>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcor vulputate nisi, et fringilla ante convallis quis. </p>
+                                        </div>
+                                        <div class="action">
+                                            <span class="price"><small>starting at</small>$18</span>
+                                            <a href="flight-booking.html" class="button btn-small">SELECT NOW</a>
+                                        </div>
+                                    </article>
+                                    <hr>
+                                    <article class="box">
+                                        <figure>
+                                            <img src="http://placehold.it/120x100" alt="" class="middle-item" />
+                                        </figure>
+                                        <div class="details">
+                                            <h4 class="box-title">Standard advance seat selection</h4>
+                                            <p>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcor vulputate nisi, et fringilla ante convallis quis. </p>
+                                        </div>
+                                        <div class="action">
+                                            <span class="price"><small>starting at</small>$18</span>
+                                            <a href="flight-booking.html" class="button btn-small">SELECT NOW</a>
+                                        </div>
+                                    </article>
+                                    <hr>
+                                    <article class="box">
+                                        <figure>
+                                            <img src="http://placehold.it/120x100" alt="" class="middle-item" />
+                                        </figure>
+                                        <div class="details">
+                                            <h4 class="box-title">Standard advance seat selection</h4>
+                                            <p>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcor vulputate nisi, et fringilla ante convallis quis. </p>
+                                        </div>
+                                        <div class="action">
+                                            <span class="price"><small>starting at</small>$18</span>
+                                            <a href="flight-booking.html" class="button btn-small">SELECT NOW</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="flight-baggage">
+                                <div class="travelo-box border-box box clearfix">
+                                    <form>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">From</h5>
+                                                <input type="text" class="input-text full-width" placeholder="city, airport or country name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">To</h5>
+                                                <input type="text" class="input-text full-width" placeholder="city, airport or country name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">Top Tier Status</h5>
+                                                <div class="selector full-width">
+                                                    <select>
+                                                            <option value="">super elite 100K</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">Bag weight</h5>
+                                                <div class="selector full-width">
+                                                    <select>
+                                                            <option value="">20kgs (44lbs)</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">Class of service</h5>
+                                                <input type="text" class="input-text full-width" placeholder="economy class">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-md-4">
+                                            <div class="form-group">
+                                                <h5 class="title">&nbsp;</h5>
+                                                <button class="full-width icon-check uppercase">View baggage allowance</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                        <input type="checkbox">Infant/child (0 to 11 years) occupying a seat (with own ticket)
+                                                    </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <h2>Baggage</h2>
+                                <p>In this section you'll find information on baggage allowances, special equipment and sports items as well as restricted items. We've also included some tips to make your trip more enjoyable.</p>
+                                <div class="baggage column-5">
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-carryon"></i>
+                                        <h5 class="box-title">Carry-on<br>Allowance</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-baggage"></i>
+                                        <h5 class="box-title">Baggage<br>Allowance</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-delayed-baggage"></i>
+                                        <h5 class="box-title">Delayed<br>Baggage</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-damaged-baggage"></i>
+                                        <h5 class="box-title">Damaged<br>Baggage</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-baggage-status"></i>
+                                        <h5 class="box-title">Baggage<br>Status</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-phone"></i>
+                                        <h5 class="box-title">Baggage<br>Services</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-status"></i>
+                                        <h5 class="box-title">Baggage<br>Tips</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-restricted"></i>
+                                        <h5 class="box-title">Restricted<br>Items</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-liability"></i>
+                                        <h5 class="box-title">Liability<br>Limitations</h5>
+                                    </div>
+                                    <div class="icon-box style9">
+                                        <i class="soap-icon-lost-found"></i>
+                                        <h5 class="box-title">Lost and<br>Found</h5>
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <h2>Basic Information</h2>
+                                <p>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim
+                                    ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat
+                                    lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</p>
+                            </div>
+                            <div class="tab-pane fade" id="flight-fare-rules">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end section travelo -->
+
+        <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
+        <script src="assets/js/material.min.js"></script>
+
+
+        <!-- js travelo -->
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
+
+        <!-- Twitter Bootstrap -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+        <!-- load revolution slider scripts -->
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- Flex Slider -->
+        <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
+
+        <!-- load BXSlider scripts -->
+        <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+        <!-- parallax -->
+        <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+
+        <!-- waypoint -->
+        <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+
+        <!-- load page Javascript -->
+        <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+        <script type="text/javascript">
+            tjq(".flexslider").flexslider({
+                animation: "fade",
+                controlNav: false,
+                animationLoop: true,
+                directionNav: false,
+                slideshow: true,
+                slideshowSpeed: 5000
+            });
+        </script>
+
+        <!-- end js travelo -->
+
+        <!-- js sliders -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [75, 300],
+                    slide: function(event, ui) {
+                        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                    }
+                });
+                $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                    " - $" + $("#slider-range").slider("values", 1));
+            });
+        </script>
+
+        <script>
+            $(function() {
+                $("#slider-time-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 24,
+                    values: [4, 17],
+                    slide: function(event, ui) {
+                        $("#time").val("" + ui.values[0] + " - " + ui.values[1]);
+                    }
+                });
+                $("#time").val("" + $("#slider-time-range").slider("values", 0) +
+                    " - " + $("#slider-time-range").slider("values", 1));
+            });
+        </script>
+        <!-- end js sliders-->
+
+        <script>
+            /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+            function showMenu() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+</body>
+
+</html>
