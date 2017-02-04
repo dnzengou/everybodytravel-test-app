@@ -71,6 +71,51 @@
             margin-bottom: 40px;
             z-index: 900;
         }
+        
+        .dropbtn {
+            background-color: Transparent;
+            /*background-color: #4CAF50;*/
+            color: #808080;
+            padding: 6px;
+            font-size: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #e5e5e5;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown a:hover {
+            background-color: #f1f1f1
+        }
+        
+        .show {
+            display: block;
+        }
     </style>
 </head>
 
@@ -81,7 +126,9 @@
                 <!--<span class="mdl-layout-title">
                   <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i></a>
                 </span>-->
-                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-layout-spacer">
+
+                </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
               <i class="material-icons">search</i>
@@ -91,12 +138,29 @@
                         <label class="mdl-textfield__label" for="search">Enter your query...</label>
                     </div>
                 </div>
+
+
+                <div class="dropdown">
+                    <button onclick="showMenu()" class="dropbtn">
+                            <i class="material-icons">language</i>
+                            </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" title="Deutsch">Deutsch</a>
+                        <a href="#" title="English">English</a>
+                        <a href="#" title="Español">Español</a>
+                        <a href="#" title="Français">Français</a>
+                        <a href="#" title="Nederlands">Nederlands</a>
+                        <a href="#" title="Português">Português</a>
+                    </div>
+                </div>
+
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
             <i class="material-icons">more_vert</i>
           </button>
                 <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
                     <li class="mdl-menu__item"><a href="member.html">Become a member</a></li>
                     <li class="mdl-menu__item">Login</li>
+                    <li class="mdl-menu__item">Sign up</li>
                     <li class="mdl-menu__item">About</li>
                     <li class="mdl-menu__item">Contact</li>
                     <li class="mdl-menu__item">Legal information</li>
@@ -141,6 +205,99 @@
         </div>
 
         <!-- section travelo -->
+
+        <div class="page-title-container">
+            <div class="container">
+                <div class="page-title pull-left">
+                    <h2 class="entry-title"></h2>
+                    <!--<h2 class="entry-title">Flight Search Results</h2>-->
+                </div>
+                <ul class="breadcrumbs pull-right">
+                    <li><a href="index.html">HOME</a></li>
+
+                    <ul class="breadcrumbs pull-left">
+                        <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
+                        <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                    </ul>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- login and signup-->
+
+        <div id="travelo-signup" class="travelo-signup-box travelo-box">
+            <div class="login-social">
+                <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+            </div>
+            <div class="seperator"><label>OR</label></div>
+            <div class="simple-signup">
+                <div class="text-center signup-email-section">
+                    <a href="#" class="signup-email"><i class="soap-icon-letter"></i>Sign up with Email</a>
+                </div>
+                <p class="description">By signing up, I agree to EverybodyTravel's Terms of Service, Privacy Policy, Guest Refund olicy, and Host Guarantee Terms.</p>
+            </div>
+            <div class="email-signup">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="first name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="input-text full-width" placeholder="email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="input-text full-width" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="input-text full-width" placeholder="confirm password">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                    <input type="checkbox"> Tell me about EverybodyTravel news
+                                </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="description">By signing up, I agree to EverybodyTravel's Terms of Service, Privacy Policy, Guest Refund Policy, and Host Guarantee Terms.</p>
+                    </div>
+                    <button type="submit" class="full-width btn-medium">SIGNUP</button>
+                </form>
+            </div>
+            <div class="seperator"></div>
+            <p>Already a EverybodyTravel member? <a href="#travelo-login" class="goto-login soap-popupbox">Login</a></p>
+        </div>
+        <div id="travelo-login" class="travelo-login-box travelo-box">
+            <div class="login-social">
+                <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i>Login with Facebook</a>
+                <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i>Login with Google+</a>
+            </div>
+            <div class="seperator"><label>OR</label></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="input-text full-width" placeholder="email address">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input-text full-width" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password pull-right">Forgot password?</a>
+                    <div class="checkbox checkbox-inline">
+                        <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                    </div>
+                </div>
+            </form>
+            <div class="seperator"></div>
+            <p>Don't have an account? <a href="member.html"> Become a member</a> and <a href="#travelo-signup" class="goto-signup soap-popupbox"> Sign up</a></p>
+        </div>
+
+        <!-- end login and signup-->
 
 
         <main class="mdl-layout__content mdl-color--grey-100">
@@ -672,6 +829,30 @@
         </script>
 
         <!-- end js travelo -->
+
+        <script>
+            /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+            function showMenu() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
 
 </body>
 

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>everybodytravel-test</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/material.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+    <!-- Theme Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- Current Page Styles Travelo -->
+    <link rel="stylesheet" type="text/css" href="assets/components/revolution_slider/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/revolution_slider/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/jquery.bxslider/jquery.bxslider.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/components/flexslider/flexslider.css" media="screen" />
+
+    <!-- Main Style Travelo -->
+    <link id="main-style" rel="stylesheet" href="assets/css/style-travelo.css">
+
+    <!-- Updated Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/updates.css">
+
+    <!-- Custom Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Responsive Styles Travelo -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- sliders css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- end sliders css -->
+
+    <style>
+        #message-us {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+            <div class="mdl-layout__header-row">
+                <!--<span class="mdl-layout-title">
+                  <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i></a>
+                </span>-->
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item"><a href="member.html">Become a member</a></li>
+                    <li class="mdl-menu__item">Login</li>
+                    <li class="mdl-menu__item"><a href="about.html">About</li>
+                    <li class="mdl-menu__item">Contact</li>
+                    <li class="mdl-menu__item"><a href="#">Legal information</li>
+                    <li class="mdl-menu__item"><a href="#">Support</li>
+                    <li class="mdl-menu__item">Language</li>
+                </ul>
+            </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+            <header class="demo-drawer-header">
+                <img src="assets/images/user.png" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span>me@email.me</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                        <li class="mdl-menu__item">hello@email.you</li>
+                        <li class="mdl-menu__item">info@email.us</li>
+                        <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+                    </ul>
+                </div>
+            </header>
+            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+                <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+                        <a class="mdl-navigation__link" href="my-account.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>My account</a>
+                        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
+                        <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
+                <a class="mdl-navigation__link" href="hotel-results.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Vacation rental</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Things to do</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">nature_people</i>Local guide</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Full experience</a>-->
+                        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Blog</a>
+                        <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>-->
+                        <div class="mdl-layout-spacer"></div>
+                        <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+                        </nav>
+            </div>
+
+            <!-- section travelo -->
+
+            <div class="page-title-container">
+                <div class="container">
+                    <div class="page-title pull-left">
+                        <h2 class="entry-title"></h2>
+                        <!--<h2 class="entry-title">Flight Search Results</h2>-->
+                    </div>
+                    <ul class="breadcrumbs pull-right">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="active">Hotel Search Results</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="content">
+                <div class="container">
+                    <div id="main">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-3">
+                                <!--<h4 class="search-results-title"><i class="soap-icon-search"></i><b>1,984</b> results found.</h4>-->
+                                <div class="toggle-container filters-container">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-8 col-md-9">
+                                <div class="sort-by-section clearfix box">
+                                    <h4 class="sort-by-title block-sm">Sort results by:</h4>
+                                    <ul class="sort-bar clearfix block-sm">
+                                        <li class="sort-by-name active"><a class="sort-by-container" href="#"><span>name</span></a></li>
+                                        <li class="sort-by-price"><a class="sort-by-container" href="#"><span>price</span></a></li>
+                                        <li class="sort-by-rating"><a class="sort-by-container" href="#"><span>duration</span></a></li>
+                                    </ul>
+
+                                    <ul class="swap-tiles clearfix block-sm">
+
+                                        <li class="swap-list">
+                                            <a href="#" class="btn btn-default">load more listings</a>
+                                        </li>
+
+                                        <!--<li class="swap-list">
+                                        <a href="flight-list-view.html"><i class="soap-icon-list"></i></a>
+                                    </li>
+                                    <li class="swap-grid active">
+                                        <a href="flight-grid-view.html"><i class="soap-icon-grid"></i></a>
+                                    </li>
+                                    <li class="swap-block">
+                                        <a href="flight-block-view.html"><i class="soap-icon-block"></i></a>
+                                    </li>-->
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      City <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Paris</a></li>
+                                        <li><a href="#">Brussels</a></li>
+                                        <li><a href="#">New York</a></li>
+                                        <li><a href="#">Lisbon</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Mobility <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Wheelchair User</a></li>
+                                        <li><a href="#">Deaf</a></li>
+                                        <li><a href="#">Blind</a></li>
+                                        <li><a href="#">Airport assistance</a></li>
+                                        <li><a href="#">Pregnant woman</a></li>
+                                        <li><a href="#">Mental illness</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Accessibility <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Open Shower without glass and shower seat</a></li>
+                                        <li><a href="#">Doors of minimum ( 70cm, 80cm, 90cm, 100cm, More than 100cm)</a></li>
+                                        <li><a href="#">Easy access for wheelchair in bathroom and around the toilet</a></li>
+                                        <li><a href="#">Easy access for wheelchair in the room and around the bed</a></li>
+                                        <li><a href="#">Bars of support in bathroom</a></li>
+                                        <li><a href="#">Emergency button</a></li>
+                                        <li><a href="#">Easy access to the pool</a></li>
+                                        <li><a href="#">Access to all common spaces and lift</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="btn-group">
+
+                                    <div class="sort-by-section clearfix box">
+
+                                        <!-- price slider -->
+                                        <div>
+                                            <p>
+                                                <label for="amount">Price:</label>
+                                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                            </p>
+
+                                            <div id="slider-range"></div>
+                                        </div>
+                                        <!-- end price slider -->
+
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="btn-group">
+
+                                    <div class="sort-by-section clearfix box">
+
+                                        <!-- star slider -->
+                                        <div>
+                                            <p>
+                                                <label for="star">Stars:</label>
+                                                <input type="text" id="star" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                            </p>
+
+                                            <div id="slider-star-range"></div>
+                                        </div>
+                                        <!-- end star slider -->
+
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row flight-list image-box flight listing-style1">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <article class="box">
+                                            <figure>
+                                                <span><img alt="" src="assets/images/my-hotel-room_1.jpg"></span>
+                                            </figure>
+                                            <div class="details">
+                                                <span class="price"><small>avg/person</small>$140</span>
+                                                <h4 class="box-title">My Amazing Hotel<small>Per night</small></h4>
+                                                <!--<div class="time">
+                                                <div class="take-off">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                                <div class="landing">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
+                                                <div class="action">
+                                                    <a class="button btn-small full-width" href="hotel-detailed.html">SELECT NOW</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <article class="box">
+                                            <figure>
+                                                <span><img alt="" src="assets/images/my-hotel-room_2.jpg"></span>
+                                            </figure>
+                                            <div class="details">
+                                                <span class="price"><small>avg/person</small>$80</span>
+                                                <h4 class="box-title">My Great Hotel<small>Per night</small></h4>
+                                                <!--<div class="time">
+                                                <div class="take-off">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                                <div class="landing">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
+                                                <div class="action">
+                                                    <a class="button btn-small full-width" href="hotel-detailed.html">SELECT NOW</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <article class="box">
+                                            <figure>
+                                                <span><img alt="" src="assets/images/my-hotel-room_3.jpg"></span>
+                                            </figure>
+                                            <div class="details">
+                                                <span class="price"><small>avg/person</small>$120</span>
+                                                <h4 class="box-title">My Beautiful Hotel<small>twoways flight</small></h4>
+                                                <!--<div class="time">
+                                                <div class="take-off">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                                <div class="landing">
+                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
+                                                    <div>
+                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
+                                                <div class="action">
+                                                    <a class="button btn-small full-width" href="hotel-detailed.html">SELECT NOW</a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!--</div>
+                <a class="button uppercase full-width btn-large">load more listings</a>
+                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- end section travelo -->
+
+            <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
+            <script src="assets/js/material.min.js"></script>
+
+
+            <!-- js travelo -->
+
+            <!-- Javascript -->
+            <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
+            <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
+            <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+            <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
+
+            <!-- Twitter Bootstrap -->
+            <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+            <!-- load revolution slider scripts -->
+            <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+            <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+
+            <!-- Flex Slider -->
+            <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
+
+            <!-- load BXSlider scripts -->
+            <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+            <!-- parallax -->
+            <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+
+            <!-- waypoint -->
+            <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+
+            <!-- load page Javascript -->
+            <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+            <script type="text/javascript">
+                tjq(".flexslider").flexslider({
+                    animation: "fade",
+                    controlNav: false,
+                    animationLoop: true,
+                    directionNav: false,
+                    slideshow: true,
+                    slideshowSpeed: 5000
+                });
+            </script>
+
+            <!-- end js travelo -->
+
+            <!-- js sliders -->
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $(function() {
+                    $("#slider-range").slider({
+                        range: true,
+                        min: 0,
+                        max: 500,
+                        values: [75, 300],
+                        slide: function(event, ui) {
+                            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                        }
+                    });
+                    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                        " - $" + $("#slider-range").slider("values", 1));
+                });
+            </script>
+
+            <script>
+                $(function() {
+                    $("#slider-star-range").slider({
+                        range: true,
+                        min: 0,
+                        max: 5,
+                        values: [2, 4],
+                        slide: function(event, ui) {
+                            $("#star").val("*" + ui.values[0] + " - *" + ui.values[1]);
+                        }
+                    });
+                    $("#star").val("*" + $("#slider-star-range").slider("values", 0) +
+                        " - *" + $("#slider-star-range").slider("values", 1));
+                });
+            </script>
+            <!-- end js sliders-->
+
+</body>
+
+</html>
