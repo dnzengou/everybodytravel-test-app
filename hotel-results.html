@@ -39,6 +39,8 @@
     <!-- Theme Styles Travelo -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/animate.min.css">
 
@@ -427,9 +429,13 @@
                                         <figure>
                                             <span><img alt="" src="assets/images/my-hotel-room_1.jpg"></span>
                                         </figure>
+                                        <div title="4 stars" class="five-stars-container" data-toggle="tooltip" data-placement="bottom"><span class="five-stars" style="width: 80%;"></span></div>
                                         <div class="details">
-                                            <span class="price"><small>avg/person</small>$140</span>
-                                            <h4 class="box-title">My Amazing Hotel<small>Per night</small></h4>
+                                            <span class="price"><small>avg/person</small>$140<br>
+                                            <i class="fa fa-wheelchair" aria-hidden="true" style="color:#1E90FF"></i> <i class="fa fa-deaf" aria-hidden="true" style="color:#1E90FF"></i></span>
+                                            <h4 class="box-title">My Amazing Hotel<small>Per night</small>
+                                                <small style="color:#808080"><i class="fa fa-map-marker" style="color:#3CB371"><strong></i> Lisbon</strong></small>
+                                            </h4>
                                             <!--<div class="time">
                                                 <div class="take-off">
                                                     <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
@@ -456,9 +462,13 @@
                                         <figure>
                                             <span><img alt="" src="assets/images/my-hotel-room_2.jpg"></span>
                                         </figure>
+                                        <div title="4 stars" class="five-stars-container" data-toggle="tooltip" data-placement="bottom"><span class="five-stars" style="width: 80%;"></span></div>
                                         <div class="details">
-                                            <span class="price"><small>avg/person</small>$80</span>
-                                            <h4 class="box-title">My Great Hotel<small>Per night</small></h4>
+                                            <span class="price"><small>avg/person</small>$80<br>
+                                            <i class="fa fa-universal-access" aria-hidden="true" style="color:#1E90FF"></i></span>
+                                            <h4 class="box-title">My Great Hotel<small>Per night</small>
+                                                <small style="color:#808080"><i class="fa fa-map-marker" aria-hidden="true" style="color:#3CB371"><strong></i> Brussels</strong></small>
+                                            </h4>
                                             <!--<div class="time">
                                                 <div class="take-off">
                                                     <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
@@ -485,9 +495,13 @@
                                         <figure>
                                             <span><img alt="" src="assets/images/my-hotel-room_3.jpg"></span>
                                         </figure>
+                                        <div title="4 stars" class="five-stars-container" data-toggle="tooltip" data-placement="bottom"><span class="five-stars" style="width: 80%;"></span></div>
                                         <div class="details">
-                                            <span class="price"><small>avg/person</small>$120</span>
-                                            <h4 class="box-title">My Beautiful Hotel<small>twoways flight</small></h4>
+                                            <span class="price"><small>avg/person</small>$120<br>
+                                            </i> <i class="fa fa-blind" aria-hidden="true" style="color:#1E90FF"></i></span>
+                                            <h4 class="box-title">My Beautiful Hotel<small>Per night</small>
+                                                <small style="color:#808080"><i class="fa fa-map-marker" aria-hidden="true" style="color:#3CB371"></i> <strong>Paris</strong></small>
+                                            </h4>
                                             <!--<div class="time">
                                                 <div class="take-off">
                                                     <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
@@ -610,7 +624,7 @@
 
         <script>
             /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
             function showMenu() {
                 document.getElementById("myDropdown").classList.toggle("show");
             }
