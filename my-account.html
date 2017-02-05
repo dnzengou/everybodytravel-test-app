@@ -29,6 +29,7 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/material.min.css">
@@ -197,6 +198,12 @@
                 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>-->
                 <div class="mdl-layout-spacer"></div>
+                <a class="mdl-navigation__link">
+                    <span href="#travelo-login" class="soap-popupbox"><i class="fa fa-sign-in" aria-hidden="true"> Login</i></span>
+                </a>
+                <a class="mdl-navigation__link">
+                    <span href="#travelo-login" class="soap-popupbox"><i class="fa fa-plus" aria-hidden="true"> Signup</i></span>
+                </a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
             </nav>
         </div>
@@ -298,127 +305,157 @@
 
         <!-- end login and signup-->
 
+        <!-- confirmation booking -->
+
+        <div id="booking-confirmed" class="travelo-signup-box travelo-box">
+            <p><a style="color:aqua"> loading... </a> Booking confirmed! </p>
+        </div>
+
+        <!-- confirmation booking -->
+
+
         <main class="mdl-layout__content mdl-color--grey-100">
-            <div class="mdl-grid demo-content">
-                <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                    <img width="200px" height="200px" src="assets/images/alexandre.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-                    <use xlink:href="#piechart" mask="url(#piemask)">
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.7" fill="#888" text-anchor="middle" dy="0.1"><h3 style="color:#4169E1">Hey <tspan font-size="0.2" dy="-0.07">:) </h3></tspan></text>
-                        </img>
-                        <!--<svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)">
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-                        <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)">
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-                        <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)">
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>-->
-                </div>
-                <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+            <div class="container">
 
-                    <h3><strong style="color:#4169E1">Alexandre Bodart Pinto</strong>, founder of Everybody Travel had a motorbike accident at the age of 16 and became quadriplegic. After more than 1 year in rehabilitation he decided to continue to practice
-                        his passion: Traveling around the world…
-                        <br><br>He realized during his travels that many people have to face with mobility problems and that traveling when you are a PRM (person with reduced mobility) can easily turn into a nightmare if you don’t have access to the right
-                        information. Organizing his trips took him so much time that he decided he has to do something to facilitate the life of all those who have problems of mobility, by centralizing all the information in one place, and by creating
-                        the largest community of persons with reduced mobility. And this is how
-                        <h3><strong>Everybody Travel</strong> is born….</h3>
+                <div id="main">
 
-                </div>
-                <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                    <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                            <h2 class="mdl-card__title-text">Updates</h2>
-                        </div>
-                        <div class="mdl-card__supporting-text mdl-color-text--grey-600">Nothing to declare.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-                    </div>
-                    <div class="demo-separator mdl-cell--1-col"></div>
-                    <div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-                        <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-                            <h3>View options</h3>
-                            <ul>
-                                <li>
-                                    <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Click per object</span>
-                    </label>
-                                </li>
-                                <li>
-                                    <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Views per object</span>
-                    </label>
-                                </li>
-                                <li>
-                                    <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects selected</span>
-                    </label>
-                                </li>
-                                <li>
-                                    <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects viewed</span>
-                    </label>
-                                </li>
+                    <div class="search-box-wrapper style2">
+                        <div class="search-box">
+                            <ul class="search-tabs clearfix">
+                                <li><a href="#flight-baggage" data-toggle="tab">My account</a></li>
                             </ul>
                         </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change location</a>
-                            <div class="mdl-layout-spacer"></div>
-                            <i class="material-icons">location_on</i>
+                        <div class="visible-mobile">
+                            <ul id="mobile-search-tabs" class="search-tabs clearfix">
+                                <li><a href="#flight-baggage" data-toggle="tab">My account</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade" id="flight-baggage">
+                                <div class="travelo-box border-box box clearfix">
+
+                                    <form class="booking-form" method="post" action="booking-handler.php" onsubmit="return false;">
+                                        <div class="alert small-box" style="display: none;"></div>
+                                        <div class="person-information">
+                                            <h2>My Personal Information</h2>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>first name</label>
+                                                    <input type="text" name="firstname" class="input-text full-width" value="John" placeholder="" />
+                                                </div>
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>last name</label>
+                                                    <input type="text" name="lastname" class="input-text full-width" value="Doe" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>email address</label>
+                                                    <input type="text" name="email" class="input-text full-width" value="me@email.me" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Country code</label>
+                                                    <div class="selector">
+                                                        <select name="country_code" class="full-width">
+                                                    <option value="be">Belgium (+32)</option>
+                                                    <option value="fr">France (+33)</option>
+                                                </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Phone number</label>
+                                                    <input type="text" name="phone" class="input-text full-width" value="499887766" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                <input type="checkbox" name="promo_offer" value="1"> I want to receive <span class="skin-color">EverybodyTravel</span> promotional offers in the future
+                                            </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="card-information">
+                                            <h2>Your Card Information</h2>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Credit Card Type</label>
+                                                    <div class="selector">
+                                                        <select name="card_type" class="full-width">
+                                                    <option>select a card</option>
+                                                </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Card holder name</label>
+                                                    <input type="text" name="card_holder_name" class="input-text full-width" value="" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Card number</label>
+                                                    <input type="text" name="card_number" class="input-text full-width" value="" placeholder="" />
+                                                </div>
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Card identification number</label>
+                                                    <input type="text" name="card_id_number" class="input-text full-width" value="" placeholder="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6 col-md-5">
+                                                    <label>Expiration Date</label>
+                                                    <div class="constant-column-2">
+                                                        <div class="selector">
+                                                            <select name="exp_date_m" class="full-width">
+                                                        <option>month</option>
+                                                    </select>
+                                                        </div>
+                                                        <div class="selector">
+                                                            <select name="exp_date_y" class="full-width">
+                                                        <option>year</option>
+                                                    </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-md-2">
+                                                    <label>billing zip code</label>
+                                                    <input type="text" name="zipcode" class="input-text full-width" value="" placeholder="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                            <input type="checkbox" name="term"> By continuing, you agree to the <a href="#"><span class="skin-color">Terms and Conditions</span></a>.
+                                        </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <!--<button type="submit" class="full-width btn-large">CONFIRM BOOKING</button>-->
+                                                <button type="submit" class="full-width btn-large">
+                                                    <a href="#booking-confirmed" class="soap-popupbox">CONFIRM BOOKING</a></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </div>
-        </main>
 
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <mask id="piemask" maskContentUnits="objectBoundingBox">
-            <circle cx=0.5 cy=0.5 r=0.49 fill="white">
-            <circle cx=0.5 cy=0.5 r=0.40 fill="black">
-          </mask>
-          <g id="piechart">
-            <circle cx=0.5 cy=0.5 r=0.5>
-            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)">
-          </g>
-        </defs>
-      </svg>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <g id="chart">
-            <g id="Gridlines">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3">
-            </g>
-            <g id="Numbers">
-              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
-              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
-              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
-              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
-              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
-              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
-              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
-              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
-              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
-              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
-              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
-              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
-            </g>
-          </g>
-        </defs>
-      </svg>
+                </div>
+
+            </div>
+
+        </main>
 
         <!-- end section travelo -->
 
@@ -493,24 +530,24 @@
 
         <script>
             $(function() {
-                $("#slider-star-range").slider({
+                $("#slider-time-range").slider({
                     range: true,
                     min: 0,
-                    max: 5,
-                    values: [2, 4],
+                    max: 24,
+                    values: [4, 17],
                     slide: function(event, ui) {
-                        $("#star").val("*" + ui.values[0] + " - *" + ui.values[1]);
+                        $("#time").val("" + ui.values[0] + " - " + ui.values[1]);
                     }
                 });
-                $("#star").val("*" + $("#slider-star-range").slider("values", 0) +
-                    " - *" + $("#slider-star-range").slider("values", 1));
+                $("#time").val("" + $("#slider-time-range").slider("values", 0) +
+                    " - " + $("#slider-time-range").slider("values", 1));
             });
         </script>
         <!-- end js sliders-->
 
         <script>
             /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
             function showMenu() {
                 document.getElementById("myDropdown").classList.toggle("show");
             }
@@ -530,7 +567,6 @@
                 }
             }
         </script>
-
 
 </body>
 
