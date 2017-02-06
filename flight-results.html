@@ -186,8 +186,7 @@
             </header>
             <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
                 <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-                <a class="mdl-navigation__link" href="my-account.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">account_circle</i>My account</a>
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
+                <a class="mdl-navigation__link" href="my-trips.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
                 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
                 <a class="mdl-navigation__link" href="hotel-results.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Vacation rental</a>
@@ -305,6 +304,37 @@
 
         <!-- end login and signup-->
 
+        <!-- wheelchair specifics -->
+
+        <div id="wheelchair-specifics" class="travelo-signup-box travelo-box">
+            <div><label>Do you use your own wheelchair?</label></div>
+            <form>
+                <div class="form-group">
+                    <label><input type="checkbox"> Yes </label>
+                    <input type="text" class="input-text full-width" placeholder="Manual or Electric?">
+                    <input type="text" class="input-text full-width" placeholder="Do you use any batteries?">
+                    <input type="text" class="input-text full-width" placeholder="What is the weight of your wheelchair?">
+                </div>
+                <div class="seperator"><label>OR</label></div>
+                <div class="form-group">
+                    <label><input type="checkbox"> No </label>
+                    <input type="text" class="input-text full-width" placeholder="Do you need a wheelchair at airport?">
+                    <input type="text" class="input-text full-width" placeholder="Only inside the airport  or Inside Airport and Aircraft?">
+                    <input type="text" class="input-text full-width" placeholder="Can you walk? Not At All?">
+                    <input type="text" class="input-text full-width" placeholder="A few steps with help?">
+                    <input type="text" class="input-text full-width" placeholder="A few steps without help?">
+                </div>
+                <div class="form-group">
+                    <div class="checkbox checkbox-inline">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+                <a id="confirmation" href="flight-results.html" class="button btn-success"></i>SEND</a>
+            </form>
+        </div>
+
+        <!-- end wheelchair specifics -->
+
         <section id="content">
             <div class="container">
                 <div id="main">
@@ -346,6 +376,20 @@
 
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Mobility <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#wheelchair-specifics" class="soap-popupbox">Wheelchair User</a></li>
+                                    <li><a href="#">Deaf</a></li>
+                                    <li><a href="#">Blind</a></li>
+                                    <li><a href="#">Airport assistance</a></li>
+                                    <li><a href="#">Pregnant woman</a></li>
+                                    <li><a href="#">Mental illness</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
       Flight stops <span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#">1 stop</a></li>
@@ -378,7 +422,6 @@
                                 </ul>
                             </div>
 
-
                             <div class="btn-group">
 
                                 <div class="sort-by-section clearfix box">
@@ -396,7 +439,7 @@
 
 
                                 </div>
-                                
+
                             </div>
 
 
@@ -405,19 +448,11 @@
                                 <div class="sort-by-section clearfix box">
 
                                     <!-- time slider -->
-                                    <div>
-                                        <p>
-                                            <label for="time">Flight times:</label>
-                                            <input type="text" id="time" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                        </p>
-
-                                        <div id="slider-time-range"></div>
-                                    </div>
                                     <!-- end time slider -->
 
 
                                 </div>
-                                
+
                             </div>
 
 
@@ -610,7 +645,7 @@
 
     <script>
         /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
         function showMenu() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
