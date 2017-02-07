@@ -163,7 +163,7 @@
                     <li class="mdl-menu__item"><a href="about.html">About</a></li>
                     <li class="mdl-menu__item">Contact</li>
                     <li class="mdl-menu__item">Legal information</li>
-                    <li class="mdl-menu__item">Support</li>
+                    <li class="mdl-menu__item"><a href="#support" class="soap-popupbox">Support</a></li>
                 </ul>
             </div>
         </header>
@@ -193,7 +193,7 @@
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Things to do</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">nature_people</i>Local guide</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">stars</i>Full experience</a>-->
-                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Blog</a>
+                <a class="mdl-navigation__link" href="blog.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Blog</a>
                 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a>-->
                 <div class="mdl-layout-spacer"></div>
@@ -304,17 +304,34 @@
 
         <!-- end login and signup-->
 
+        <!-- support section -->
+
+        <div id="support" class="travelo-signup-box travelo-box">
+            <div><label>If you have any question or problem regarding Everybody Travel, please contact us by filling the form below:</label></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="input-text full-width" placeholder="Name">
+                    <input type="text" class="input-text full-width" placeholder="Firstname">
+                    <input type="text" class="input-text full-width" placeholder="email">
+                    <input type="text" class="input-text full-width" placeholder="Request">
+                </div>
+                <a id="confirmation" href="index.html" class="button btn-success"></i>SEND</a>
+            </form>
+        </div>
+
+        <!-- end support section -->
+
         <main class="mdl-layout__content mdl-color--grey-100">
             <div class="mdl-grid demo-content">
                 <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                    <img width="200px" height="200px" src="assets/images/car-economy.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop" href="car-details.html">
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.7" fill="#888" text-anchor="middle" dy="0.1">My Car <tspan dy="-0.07" font-size="0.2"></h3></tspan></text>
+                    <img width="200px" height="200px" src="assets/images/car-economy.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.7" fill="#888" text-anchor="middle" dy="0.1"><a href="car-details.html">My Car</a> <tspan dy="-0.07" font-size="0.2"></h3></tspan></text>
                     </img>
-                    <img width="200px" height="200px" src="assets/images/my-hotel-room_3.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop" href="hotel-details.html">
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">My Hotel Room<tspan dy="-0.07" font-size="0.2"></tspan></text>
+                    <img width="200px" height="200px" src="assets/images/my-hotel-room_3.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><a href="hotel-details.html">My Hotel Room</a> <tspan dy="-0.07" font-size="0.2"></tspan></text>
                     </svg>
-                    <img width="200px" height="200px" src="assets/images/flight-lufthansa.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop" href="flight-details.html">
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">My Flight<tspan dy="-0.07" font-size="0.2"></tspan></text>
+                    <img width="200px" height="200px" src="assets/images/flight-lufthansa.jpg" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
+                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1"><a href="flight-details.html">My Flight</a> <tspan dy="-0.07" font-size="0.2"></tspan></text>
                     </svg>
                     <!--<svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
               <use xlink:href="#piechart" mask="url(#piemask)">
@@ -378,46 +395,6 @@
                 </div>
             </div>
         </main>
-
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <mask id="piemask" maskContentUnits="objectBoundingBox">
-            <circle cx=0.5 cy=0.5 r=0.49 fill="white">
-            <circle cx=0.5 cy=0.5 r=0.40 fill="black">
-          </mask>
-          <g id="piechart">
-            <circle cx=0.5 cy=0.5 r=0.5>
-            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)">
-          </g>
-        </defs>
-      </svg>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <g id="chart">
-            <g id="Gridlines">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3">
-            </g>
-            <g id="Numbers">
-              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
-              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
-              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
-              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
-              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
-              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
-              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
-              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
-              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
-              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
-              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
-              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
-            </g>
-          </g>
-        </defs>
-      </svg>
 
         <!-- end section travelo -->
 
@@ -509,7 +486,7 @@
 
         <script>
             /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
             function showMenu() {
                 document.getElementById("myDropdown").classList.toggle("show");
             }

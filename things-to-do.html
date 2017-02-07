@@ -29,6 +29,7 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -186,7 +187,7 @@
             </header>
             <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
                 <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-                <a class="mdl-navigation__link" href="my-trips.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
+                <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>My Trips</a>
                 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flight_takeoff</i>Flight</a>
                 <a class="mdl-navigation__link" href="hotel-results.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">hotel</i>Hotel</a>
                 <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Vacation rental</a>
@@ -221,9 +222,8 @@
                     <ul class="breadcrumbs pull-left">
                         <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
                         <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
-                        <li class="active">Car Details</li>
+                        <li class="active">Thing to do</li>
                     </ul>
-                </ul>
 
                 </ul>
             </div>
@@ -325,288 +325,200 @@
         <main class="mdl-layout__content mdl-color--grey-100">
             <div class="container">
 
-                <div id="main">
+                <!--<img src="assets/images/beach.jpg">
+                <style>
+                    div {
+                        /*background-color: #8b9dc3;*/
+                        background-image: url(assets/images/beach.jpg);
+                        background-repeat: repeat;
+                    }
+                </style>-->
 
+
+                <div id="main">
+                    <!--<h1 class="page-title">Fly with us in Comfort!</h1>
+                    <h2 class="page-description col-md-6 no-float no-padding">We're bringing you a modern, comfortable and connected flight experience.</h2>-->
                     <div class="search-box-wrapper style2">
                         <div class="search-box">
                             <ul class="search-tabs clearfix">
-                                <li class="active"><a href="#flight-details" data-toggle="tab">Car Details</a></li>
-                                <li><a href="#car-amenities" data-toggle="tab">Amenities</a></li>
-                                <li><a href="#similar-listings" data-toggle="tab">Similar Listings</a></li>
+                                <li><a href="#hotel-reviews" class="button btn-small yellow-bg white-color">THINGS TO DO</a></li>
                             </ul>
-                        </div>
-                        <div class="visible-mobile">
-                            <ul id="mobile-search-tabs" class="search-tabs clearfix">
-                                <li class="active"><a href="#flight-details" data-toggle="tab">Car Details</a></li>
-                                <li><a href="#car-amenities" data-toggle="tab">Amenities</a></li>
-                                <li><a href="#similar-listings" data-toggle="tab">Similar Listings</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                            <div class="visible-mobile">
+                                <li><a href="#hotel-reviews" class="button btn-small yellow-bg white-color">THINGS TO DO</a></li>
+                                </ul>
+                            </div>
 
-                    <div class="tab-content">
+                            <div class="search-tab-content">
 
-                        <div class="tab-pane fade in active" id="flight-details">
-                            <div class="intro table-wrapper full-width hidden-table-sm box">
-                                <div class="col-md-4 table-cell travelo-box">
-                                    <dl class="term-description">
-                                        <dt>Rental Company:</dt>
-                                        <dd>Thrifty</dd>
-                                        <dt>Car Type:</dt>
-                                        <dd>Berline</dd>
-                                        <dt>Car name:</dt>
-                                        <dd>Volvo S40</dd>
-                                        <dt>Passenger:</dt>
-                                        <dd>5</dd>
-                                        <dt>Baggage:</dt>
-                                        <dd>3</dd>
-                                        <dt>Car features:</dt>
-                                        <dd>Available
-                                            <dt>Taxes &amp; Fees:</dt>
-                                            <dd>$85.17</dd>
-                                            <dt>total price:</dt>
-                                            <dd>$320.17</dd>
-                                    </dl>
-                                </div>
-                                <div class="col-sm-8 table-cell">
-                                    <div class="detailed-features clearfix">
-                                        <div class="col-md-6">
-                                            <br>
-                                            <h4 class="box-title">
-                                                Pick-up location details
-                                                <small>Phone: 32-499851355</small>
-                                            </h4>
-                                            <br>
-                                            <div class="icon-box style11">
-                                                <div class="icon-wrapper">
-                                                    <i class="soap-icon-clock"></i>
+                                <div class="tab-pane fade in active" id="flight-details">
+                                    <div class="intro table-wrapper full-width hidden-table-sm box">
+                                        <div class="col-md-4 table-cell travelo-box">
+                                            <dl class="term-description">
+                                                <dt>Culture:</dt>
+                                                <dd>4 concerts</dd>
+                                                <dt>Excursions:</dt>
+                                                <dd>3 new destinations </dd>
+                                                <dt>Sport:</dt>
+                                                <dd>Foot, Tennis, Ping Pong </dd>
+                                                <dt>Cinema:</dt>
+                                                <dd>7 new movies</dd>
+                                                <dt>Monument:</dt>
+                                                <dd>Eiffel Tower, Louvre</dd>
+                                                <dt>Night life:</dt>
+                                                <dd>Disco, Bar, Jam</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-md-8 table-cell">
+                                            <div class="detailed-features booking-details">
+                                                <h4 class="box-title">Priority access<small> via Accors</small></h4>
+                                                <div class="table-wrapper flights">
+                                                    <div class="table-row first-flight">
+                                                        <div class="table-cell">
+                                                            <img src="assets/images/paris.jpg" alt=""><br>
+                                                            <label style="color:#808080"><i class="fa fa-map-marker" aria-hidden="true" style="color:#3CB371"></i> 
+                                                            <strong><a href="https://www.google.be/maps/place/Eiffel+Tower/@48.8583701,2.2944813,15z/data=!4m2!3m1!1s0x0:0x8ddca9ee380ef7e0?sa=X&ved=0ahUKEwjqjtWl7PzRAhWGtBoKHcbqB8EQ_BIIczAK">Eiffel Tower, Paris FRANCE</a></strong></label>
+                                                        </div>
+                                                        <div class="table-cell timing-detail">
+                                                            <div class="timing">
+                                                                <div class="check-in">
+                                                                    <label>Arrival</label>
+                                                                    <span>14 Mars 2017, 8:30 am</span>
+                                                                </div>
+                                                                <div class="duration text-center">
+                                                                    <i class="soap-icon-clock"></i>
+                                                                    <span>3 days</span>
+                                                                </div>
+                                                                <div class="check-out">
+                                                                    <label>Departure</label>
+                                                                    <span>17 Mars 2017, 9:00 am</span>
+                                                                </div>
+                                                                <div class="col-md-8 table-cell">
+                                                                    <ul class="swap-tiles clearfix block-sm">
+                                                                        <li class="swap-list">
+                                                                            <a href="#" class="btn btn-warning">Check availability</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!--<label class="layover">Layover : 3h 50m</label>-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-row second-flight">
+                                                        <div class="table-cell logo">
+                                                            <label>
+                                                            <a class="pull-center">Per adult</a>
+                                                            <span class="price clearfix">$45</span>
+                                                    </label>
+
+                                                        </div>
+
+                                                        <div class="table-cell timing-detail">
+                                                            <div class="timing">
+
+                                                                <div title="4 stars" class="five-stars-container" data-toggle="tooltip" data-placement="bottom"><span class="five-stars" style="width: 80%;"></span></div>
+                                                                <span class="review pull-right">3.8/5 <small>(229 reviews)</small></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-8 table-cell">
+                                                            <ul class="swap-tiles clearfix block-sm">
+                                                                <li class="swap-list">
+                                                                    <a href="#" class="btn btn-default">load more</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
-                                                <dl class="details">
-                                                    <dt class="skin-color">Pickup time</dt>
-                                                    <dd>Thu, Dec 14, 2016 | 11:00 am</dd>
-                                                </dl>
-                                            </div>
-                                            <div class="icon-box style11">
-                                                <div class="icon-wrapper">
-                                                    <i class="soap-icon-departure"></i>
-                                                </div>
-                                                <dl class="details">
-                                                    <dt class="skin-color">Location</dt>
-                                                    <dd>Brussels, airport</dd>
-                                                </dl>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <br>
-                                            <h4 class="box-title">
-                                                Drop-off location details
-                                                <small>Phone: 32-499851355</small>
-                                            </h4>
-                                            <br>
-                                            <div class="icon-box style11">
-                                                <div class="icon-wrapper">
-                                                    <i class="soap-icon-clock"></i>
-                                                </div>
-                                                <dl class="details">
-                                                    <dt class="skin-color">Drop off Time</dt>
-                                                    <dd>Fri, Dec 18, 2016 | 11:00 am </dd>
-                                                </dl>
-                                            </div>
-                                            <div class="icon-box style11">
-                                                <div class="icon-wrapper">
-                                                    <i class="soap-icon-departure"></i>
-                                                </div>
-                                                <dl class="details">
-                                                    <dt class="skin-color">Location</dt>
-                                                    <dd>Brussels Airport (BRU)</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="car-amenities">
-                            <!--<h2></h2>
-                                    <p></p>-->
-                            <ul class="amenities clearfix style1">
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-wifi"></i>WI_FI</div>
-                                </li>
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-aircon"></i>air conditioning</div>
-                                </li>
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-entertainment"></i>entertainment</div>
-                                </li>
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-pickanddrop"></i>pick and drop</div>
-                                </li>
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-parking"></i>Free parking</div>
-                                </li>
-                                <li class="col-md-4 col-sm-6">
-                                    <div class="icon-box style1"><i class="soap-icon-handicapaccessiable"></i>Handicap Accessible</div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-pane fade" id="similar-listings">
-                            <h2>Other Cars</h2>
-                            <p></p>
-                            <hr>
-                            <div class="image-box style12">
-                                <article class="box">
-                                    <figure>
-                                        <img src="assets/images/car-compact.jpg" alt="" class="middle-item" />
-                                    </figure>
-                                    <div class="details">
-                                        <h4 class="box-title">Compact</h4>
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <span class="price"><small>Per day</small>$70</span>
-                                        <a href="booking.html" class="button btn-small">SELECT NOW</a>
-                                    </div>
-                                </article>
-                                <hr>
-                                <article class="box">
-                                    <figure>
-                                        <img src="assets/images/car-4x4.jpg" alt="" class="middle-item" />
-                                    </figure>
-                                    <div class="details">
-                                        <h4 class="box-title">4x4</h4>
-                                        <p></p>
-                                    </div>
-                                    <div class="action">
-                                        <span class="price"><small>Per day</small>$90</span>
-                                        <a href="booking.html" class="button btn-small">SELECT NOW</a>
-                                    </div>
-                                </article>
-                                <hr>
-                            </div>
-                        </div>
-
 
                     </div>
                 </div>
 
-            </div>
+        </main>
 
-    </div>
+        <!-- end section travelo -->
 
-    </main>
-
-    <!-- end section travelo -->
-
-    <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
-    <script src="assets/js/material.min.js"></script>
+        <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
+        <script src="assets/js/material.min.js"></script>
 
 
-    <!-- js travelo -->
+        <!-- js travelo -->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
 
-    <!-- Twitter Bootstrap -->
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <!-- Twitter Bootstrap -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <!-- load revolution slider scripts -->
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- load revolution slider scripts -->
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- Flex Slider -->
-    <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
+        <!-- Flex Slider -->
+        <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
 
-    <!-- load BXSlider scripts -->
-    <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <!-- load BXSlider scripts -->
+        <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
 
-    <!-- parallax -->
-    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+        <!-- parallax -->
+        <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
 
-    <!-- waypoint -->
-    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+        <!-- waypoint -->
+        <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
 
-    <!-- load page Javascript -->
-    <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!-- load page Javascript -->
+        <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
 
-    <script type="text/javascript">
-        tjq(".flexslider").flexslider({
-            animation: "fade",
-            controlNav: false,
-            animationLoop: true,
-            directionNav: false,
-            slideshow: true,
-            slideshowSpeed: 5000
-        });
-    </script>
-
-    <!-- end js travelo -->
-
-    <!-- js sliders -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function() {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [75, 300],
-                slide: function(event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
+        <script type="text/javascript">
+            tjq(".flexslider").flexslider({
+                animation: "fade",
+                controlNav: false,
+                animationLoop: true,
+                directionNav: false,
+                slideshow: true,
+                slideshowSpeed: 5000
             });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-    </script>
+        </script>
 
-    <script>
-        $(function() {
-            $("#slider-time-range").slider({
-                range: true,
-                min: 0,
-                max: 24,
-                values: [4, 17],
-                slide: function(event, ui) {
-                    $("#time").val("" + ui.values[0] + " - " + ui.values[1]);
-                }
-            });
-            $("#time").val("" + $("#slider-time-range").slider("values", 0) +
-                " - " + $("#slider-time-range").slider("values", 1));
-        });
-    </script>
-    <!-- end js sliders-->
+        <!-- end js travelo -->
 
-    <script>
-        /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
-        function showMenu() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+        <script>
+            /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
+            function showMenu() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
                     }
                 }
             }
-        }
-    </script>
+        </script>
+
 
 </body>
 
