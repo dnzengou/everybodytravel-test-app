@@ -40,6 +40,8 @@
     <!-- Theme Styles Travelo -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/animate.min.css">
 
@@ -304,37 +306,6 @@
 
         <!-- end login and signup-->
 
-        <!-- wheelchair specifics -->
-
-        <div id="wheelchair-specifics" class="travelo-signup-box travelo-box">
-            <div><label>Do you use your own wheelchair?</label></div>
-            <form>
-                <div class="form-group">
-                    <label><input type="checkbox"> Yes </label>
-                    <input type="text" class="input-text full-width" placeholder="Manual or Electric?">
-                    <input type="text" class="input-text full-width" placeholder="Do you use any batteries?">
-                    <input type="text" class="input-text full-width" placeholder="What is the weight of your wheelchair?">
-                </div>
-                <div class="seperator"><label>OR</label></div>
-                <div class="form-group">
-                    <label><input type="checkbox"> No </label>
-                    <input type="text" class="input-text full-width" placeholder="Do you need a wheelchair at airport?">
-                    <input type="text" class="input-text full-width" placeholder="Only inside the airport  or Inside Airport and Aircraft?">
-                    <input type="text" class="input-text full-width" placeholder="Can you walk? Not At All?">
-                    <input type="text" class="input-text full-width" placeholder="A few steps with help?">
-                    <input type="text" class="input-text full-width" placeholder="A few steps without help?">
-                </div>
-                <div class="form-group">
-                    <div class="checkbox checkbox-inline">
-                        <label><input type="checkbox"> Remember me</label>
-                    </div>
-                </div>
-                <a id="confirmation" href="/flight-results.html" class="button btn-success"></i>SEND</a>
-            </form>
-        </div>
-
-        <!-- end wheelchair specifics -->
-
         <!-- support section -->
 
         <div id="support" class="travelo-signup-box travelo-box">
@@ -352,7 +323,6 @@
 
         <!-- end support section -->
 
-
         <section id="content">
             <div class="container">
                 <div id="main">
@@ -364,315 +334,132 @@
                         </div>
 
                         <div class="col-sm-8 col-md-9">
-                            <div class="sort-by-section clearfix box">
-                                <h4 class="sort-by-title block-sm">Sort results by:</h4>
-                                <ul class="sort-bar clearfix block-sm">
-                                    <li class="sort-by-name"><a class="sort-by-container" href="#"><span>name</span></a></li>
-                                    <li class="sort-by-price"><a class="sort-by-container" href="#"><span>price</span></a></li>
-                                    <li class="sort-by-rating active"><a class="sort-by-container" href="#"><span>duration</span></a></li>
-                                </ul>
 
-                                <ul class="swap-tiles clearfix block-sm">
+                            <!-- Place this tag where you want the Awesome Table Widget to render -->
+                            <!--<div data-type="AwesomeTableView" data-viewID="-Kch30RRHRHCcoabQBeE"></div>-->
 
-                                    <li class="swap-list">
-                                        <a href="#" class="btn btn-default">load more listings</a>
-                                    </li>
-                                </ul>
+                            <iframe height="500px" width="100%" style="border:none;" src="https://view-awesome-table.com/-KcmVYgXTbuJy8j00_P7/view"></iframe>
 
-                            </div>
-
-
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-      Mobility <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#wheelchair-specifics" class="soap-popupbox">Wheelchair User</a></li>
-                                    <li><a href="#">Deaf</a></li>
-                                    <li><a href="#">Blind</a></li>
-                                    <li><a href="#">Airport assistance</a></li>
-                                    <li><a href="#">Pregnant woman</a></li>
-                                    <li><a href="#">Mental illness</a></li>
-                                </ul>
-                            </div>
-
-
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-      Flight stops <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">1 stop</a></li>
-                                    <li><a href="#">2 stops</a></li>
-                                    <li><a href="#">3 stops</a></li>
-                                    <li><a href="#">Multistops</a></li>
-                                </ul>
-                            </div>
-
-
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-      Flight types <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Economy</a></li>
-                                    <li><a href="#">First class</a></li>
-                                </ul>
-                            </div>
-
-
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-      Airlines <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">United Airlines</a></li>
-                                    <li><a href="#">Delta Airlines</a></li>
-                                    <li><a href="#">Air France</a></li>
-                                    <li><a href="#">Lufthansa</li>
-                                </ul>
-                            </div>
-
-                            <div class="btn-group">
-
-                                <div class="sort-by-section clearfix box">
-
-                                    <!-- price slider -->
-                                    <div>
-                                        <p>
-                                            <label for="amount">Price:</label>
-                                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                        </p>
-
-                                        <div id="slider-range"></div>
-                                    </div>
-                                    <!-- end price slider -->
-
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="btn-group">
-
-                                <div class="sort-by-section clearfix box">
-
-                                    <!-- time slider -->
-                                    <!-- end time slider -->
-
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="row flight-list image-box flight listing-style1">
-                                <div class="col-sm-6 col-lg-4">
-                                    <article class="box">
-                                        <figure>
-                                            <span><img alt="" src="assets/images/paris.jpg"></span>
-                                        </figure>
-                                        <div class="details">
-                                            <span class="price"><small>avg/person</small>$620</span>
-                                            <h4 class="box-title">Paris<small>Twoways flight</small></h4>
-                                            <!--<div class="time">
-                                                <div class="take-off">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                                <div class="landing">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
-                                            <div class="action">
-                                                <a class="button btn-small full-width" href="/flight-details.html">SELECT NOW</a>
-                            </div>
                         </div>
-                        </article>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <article class="box">
-                            <figure>
-                                <span><img alt="" src="assets/images/new-york.jpg"></span>
-                            </figure>
-                            <div class="details">
-                                <span class="price"><small>avg/person</small>$680</span>
-                                <h4 class="box-title">New York<small>Oneway flight</small></h4>
-                                <!--<div class="time">
-                                                <div class="take-off">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                                <div class="landing">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
-                                <div class="action">
-                                    <a class="button btn-small full-width" href="/flight-details.html">SELECT NOW</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <article class="box">
-                            <figure>
-                                <span><img alt="" src="assets/images/brussels.jpg"></span>
-                            </figure>
-                            <div class="details">
-                                <span class="price"><small>avg/person</small>$530</span>
-                                <h4 class="box-title">Brussels<small>twoways flight</small></h4>
-                                <!--<div class="time">
-                                                <div class="take-off">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">Take off</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                                <div class="landing">
-                                                    <div class="icon"><i class="soap-icon-plane-right yellow-color"></i></div>
-                                                    <div>
-                                                        <span class="skin-color">landing</span><br />Wed Nov 13<br />7:50 Am
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p class="duration"><span class="skin-color">Total Time</span> 13 Hour, 40 minutes</p>-->
-                                <div class="action">
-                                    <a class="button btn-small full-width" href="/flight-details.html">SELECT NOW</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!--</div>
-                <a class="button uppercase full-width btn-large">load more listings</a>
-                    </div>-->
                 </div>
             </div>
-    </div>
-    </div>
-    </div>
-    </section>
+        </section>
 
-    <!-- end section travelo -->
+        <!-- end section travelo -->
 
-    <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
-    <script src="assets/js/material.min.js"></script>
+        <a href="https://m.me/315161995533634" target="_blank" id="message-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Message us</a>
+        <script src="assets/js/material.min.js"></script>
 
 
-    <!-- js travelo -->
+        <!-- js travelo -->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.noconflict.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.2.7.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.1.10.4.min.js"></script>
 
-    <!-- Twitter Bootstrap -->
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <!-- Twitter Bootstrap -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
-    <!-- load revolution slider scripts -->
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- load revolution slider scripts -->
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="assets/components/revolution_slider/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- Flex Slider -->
-    <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
+        <!-- Flex Slider -->
+        <script type="text/javascript" src="assets/components/flexslider/jquery.flexslider-min.js"></script>
 
-    <!-- load BXSlider scripts -->
-    <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <!-- load BXSlider scripts -->
+        <script type="text/javascript" src="assets/components/jquery.bxslider/jquery.bxslider.min.js"></script>
 
-    <!-- parallax -->
-    <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
+        <!-- parallax -->
+        <script type="text/javascript" src="assets/js/jquery.stellar.min.js"></script>
 
-    <!-- waypoint -->
-    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+        <!-- waypoint -->
+        <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
 
-    <!-- load page Javascript -->
-    <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!-- load page Javascript -->
+        <script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
 
-    <script type="text/javascript">
-        tjq(".flexslider").flexslider({
-            animation: "fade",
-            controlNav: false,
-            animationLoop: true,
-            directionNav: false,
-            slideshow: true,
-            slideshowSpeed: 5000
-        });
-    </script>
-
-    <!-- end js travelo -->
-
-    <!-- js sliders -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function() {
-            $("#slider-range").slider({
-                range: true,
-                min: 0,
-                max: 500,
-                values: [75, 300],
-                slide: function(event, ui) {
-                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-                }
+        <script type="text/javascript">
+            tjq(".flexslider").flexslider({
+                animation: "fade",
+                controlNav: false,
+                animationLoop: true,
+                directionNav: false,
+                slideshow: true,
+                slideshowSpeed: 5000
             });
-            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-                " - $" + $("#slider-range").slider("values", 1));
-        });
-    </script>
+        </script>
 
-    <script>
-        $(function() {
-            $("#slider-time-range").slider({
-                range: true,
-                min: 0,
-                max: 24,
-                values: [4, 17],
-                slide: function(event, ui) {
-                    $("#time").val("" + ui.values[0] + " - " + ui.values[1]);
-                }
+        <!-- end js travelo -->
+
+        <!-- js sliders -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [75, 300],
+                    slide: function(event, ui) {
+                        $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                    }
+                });
+                $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                    " - $" + $("#slider-range").slider("values", 1));
             });
-            $("#time").val("" + $("#slider-time-range").slider("values", 0) +
-                " - " + $("#slider-time-range").slider("values", 1));
-        });
-    </script>
-    <!-- end js sliders-->
+        </script>
 
-    <script>
-        /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        toggle between hiding and showing the dropdown content */
-        function showMenu() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
+        <script>
+            $(function() {
+                $("#slider-star-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 5,
+                    values: [2, 4],
+                    slide: function(event, ui) {
+                        $("#star").val("*" + ui.values[0] + " - *" + ui.values[1]);
+                    }
+                });
+                $("#star").val("*" + $("#slider-star-range").slider("values", 0) +
+                    " - *" + $("#slider-star-range").slider("values", 1));
+            });
+        </script>
+        <!-- end js sliders-->
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
+        <script>
+            /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
+            function showMenu() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
 
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
                     }
                 }
             }
-        }
-    </script>
+        </script>
+
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
+
 
 </body>
 
